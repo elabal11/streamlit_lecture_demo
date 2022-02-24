@@ -1,0 +1,14 @@
+import streamlit as st
+import requests
+
+def app():
+    st.title("Streamlit Lecture")
+    input = st.text_input("Input your text")
+    if input:
+        url = f"https://img.bruzu.com/?backgroundImage=https://source.unsplash.com/U-Kty6HxcQc/500x500%20&a.text={input}&a.color=white&a.fontFamily=Poppins&a.fontWeight=800&a.width=450&b.text=%20@naval&b.width=450&b.top=480&b.originY=bottom&b.color=white&b.fontFamily=Playfair%20Display&b.fontSize=30"
+        st.image(requests.get(url).content)
+
+    button = st.button("Get Random images from Picsum API")
+    if button:
+        url = f"https://picsum.photos/200"
+        st.image(requests.get(url).content)
