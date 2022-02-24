@@ -1,0 +1,14 @@
+# streamlit
+streamlit
+# data manipulation
+numpy
+pandas
+# data viz
+matplotlib
+plotly
+altair
+# computation
+scipy
+# scraping
+requests
+bs4
