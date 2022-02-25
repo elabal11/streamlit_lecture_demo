@@ -1,0 +1,4 @@
+include requirements.txt
+include app_main.py
+include app_image.py
+include app_api.py
