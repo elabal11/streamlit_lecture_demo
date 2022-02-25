@@ -11,7 +11,7 @@ def app():
         st.image(requests.get(url).content)
 
     st.header("Picsum API")
-    button = st.button("Get Random Images")
+    button = st.button("Fetch Random Images")
     if button:
         url = f"https://picsum.photos/500"
         st.image(requests.get(url).content)
