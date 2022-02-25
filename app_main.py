@@ -10,6 +10,9 @@ PAGES = {
     "API Example": app_api
 }
 
+st.title("Streamlit Lecture")
+
+
 st.sidebar.title('Navigation')
 selection = st.sidebar.radio("Go to", list(PAGES.keys()))
 page = PAGES[selection]
