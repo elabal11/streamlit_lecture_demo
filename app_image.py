@@ -7,7 +7,7 @@ img_list = ['abstract-red-color-light-oblique-1630900.jpeg','black-white-wallpap
 
 def app():
     st.title("Streamlit Lecture")
-    uploaded_file = st.file_uploader('Upload an image',type=['jpeg','jpg','png'])
+    uploaded_file = st.file_uploader('Upload an image',type=['jpeg','jpg','png','gif'])
 
 
 
